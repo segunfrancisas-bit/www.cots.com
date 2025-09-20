@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas on the Street — Charity & Community</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ANNIVERSARY CANVAS -->
+  <canvas id="anniversary-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1 class="brand">Christmas on the Street</h1>
+      <div class="menu-toggle">☰</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="spark-text">Bringing Light to Our Community</h1>
+      <p>Together, we make the season brighter for those in need.</p>
+      <a href="#donate" class="btn">Donate Now</a>
+      <a href="#programs" class="btn">See Programs</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We spread love, joy, and hope to our community through acts of kindness, outreach, and support.</p>
+    <div class="about-cards">
+      <div class="about-card">
+        <img src="images/mission.jpg" alt="Mission">
+        <h3>Our Mission</h3>
+        <p>Provide support and joy to underserved communities.</p>
+      </div>
+      <div class="about-card">
+        <img src="images/vision.jpg" alt="Vision">
+        <h3>Our Vision</h3>
+        <p>Foster a community where everyone feels loved and cared for.</p>
+      </div>
+      <div class="about-card">
+        <img src="images/values.jpg" alt="Values">
+        <h3>Our Values</h3>
+        <p>Compassion, generosity, and inclusivity in all we do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Feeding Drive</h3>
+        <p>Providing meals for families in need.</p>
+      </div>
+      <div class="card">
+        <h3>Gift Distribution</h3>
+        <p>Sharing Christmas gifts with children.</p>
+      </div>
+      <div class="card">
+        <h3>Community Support</h3>
+        <p>Building relationships and assisting where needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <h2>Our Impact</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>10,000+</h3>
+        <p>Lives Impacted</p>
+      </div>
+      <div class="stat">
+        <h3>500+</h3>
+        <p>Meals Served</p>
+      </div>
+      <div class="stat">
+        <h3>50+</h3>
+        <p>Events Organized</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Christmas on the Street changed my life."</p>
+        <h4>- Volunteer Jane</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Amazing community support and care."</p>
+        <h4>- Beneficiary John</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/event1.png" alt="Event 1">
+      <img src="images/event2.png" alt="Event 2">
+      <img src="images/event3.png" alt="Event 3">
+      <img src="images/event4.png" alt="Event 4">
+      <img src="images/event5.png" alt="Event 5">
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Your contribution helps us reach more people and create a bigger impact.</p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#" class="btn">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@christmasonthestreet.org | Phone: +234 816 252 9363</p>
+  </section>
+
+  <!-- FLOATING DONATE BUTTON -->
+  <a href="#donate" class="float-donate">Donate</a>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox"><img src="" alt="Gallery Image"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Christmas on the Street</p>
+    <div>
+      <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // LIGHTBOX
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+      });
+    });
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) lightbox.style.display = 'none';
+    });
+
+    // ANNIVERSARY CANVAS
+    const canvas = document.getElementById('anniversary-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = 50;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    let text = "T h r e e  Y e a r s  A n n i v e r s a r y";
+    let index = 0;
+    let counter = 0;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.font = "bold 43px 'Dancing Script', cursive";
+
+    let fireworks = [];
+    function createFirework() {
+      let fw = {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 4 + 2,
+        dx: (Math.random() - 0.5) * 6,
+        dy: (Math.random() - 0.5) * 6,
+        alpha: 1,
+        color: `rgba(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},1)`
+      };
+      fireworks.push(fw);
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Typing effect
+      ctx.fillStyle = "gold";
+      ctx.fillText(text.slice(0, index), canvas.width/2, canvas.height/2);
+      counter++;
+      if (counter % 12 === 0) {
+        if (index < text.length) index++;
+      }
+
+      // Fireworks
+      if (Math.random() < 0.7) createFirework();
+      fireworks.forEach(fw => {
+        ctx.beginPath();
+        ctx.arc(fw.x, fw.y, fw.radius, 0, Math.PI*2);
+        ctx.fillStyle = fw.color.replace('1)', ''+fw.alpha+')');
+        ctx.fill();
+        fw.x += fw.dx;
+        fw.y += fw.dy;
+        fw.alpha -= 0.02;
+      });
+
+      fireworks = fireworks.filter(fw => fw.alpha > 0);
+
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    // MOBILE MENU TOGGLE
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav');
+    toggle.addEventListener('click', () => {
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+
+</body>
+</html>
