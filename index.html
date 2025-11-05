@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Christmas on the Street — Charity & Community. Bringing light to our community through outreach, gifts and support." />
   <title>Christmas on the Street — Charity & Community</title>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ANNIVERSARY CANVAS -->
-  <canvas id="anniversary-canvas"></canvas>
+  <canvas id="anniversary-canvas" aria-hidden="true"></canvas>
 
   <!-- HEADER -->
   <header>
@@ -20,275 +23,368 @@
       <h1 class="brand">Christmas on the Street</h1>
       <nav>
         <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#impact">Impact</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#donate">Donate</a>
-        <a href="#contact">Contact</a>
+<a href="#programs">Programs</a>
+<a href="#impact">Impact</a>
+<a href="#sponsors">Sponsors</a>
+<a href="#sponsorship-letters">Sponsorship Letters</a>
+<a href="#gallery">Gallery</a>
+<a href="#donate">Donate</a>
       </nav>
-      <div class="menu-toggle">☰</div>
+      <div class="menu-toggle" aria-label="Open menu" role="button" tabindex="0">☰</div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1 id="spark-text">Bringing Light to Our Community</h1>
-      <p>Spread the good tidings make the street smile.</p>
-      <a href="#donate" class="btn">Donate Now</a>
-      <a href="#programs" class="btn">See Programs</a>
+  <main>
+    <section class="hero" id="home">
+  <canvas id="anniversary-canvas"></canvas>
+
+  <div class="hero-content">
+    <h1>Santa Claus is Coming to Town</h1>
+    <p>Together, we bring joy and hope to the streets this festive season.</p>
+    <a href="#donate" class="btn">Donate Now</a>
+    <a href="#gallery" class="btn">View Gallery</a>
+  </div>
+</section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We spread love, joy, and hope to our community through acts of kindness, outreach, and support.</p>
+      <div class="about-cards">
+        <div class="about-card">
+          <img src="images/mission.jpg" alt="Mission">
+          <h3>Our Mission</h3>
+          <p>Provide support and joy to underserved communities.</p>
+        </div>
+        <div class="about-card">
+          <img src="images/vision.jpg" alt="Vision">
+          <h3>Our Vision</h3>
+          <p>Foster a community where everyone feels loved and cared for.</p>
+        </div>
+        <div class="about-card">
+          <img src="images/values.jpg" alt="Values">
+          <h3>Our Values</h3>
+          <p>Compassion, generosity, and inclusivity in all we do.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Feeding Drive</h3>
+          <p>Providing meals for families in need.</p>
+        </div>
+        <div class="card">
+          <h3>Gift Distribution</h3>
+          <p>Sharing Christmas gifts with children.</p>
+        </div>
+        <div class="card">
+          <h3>Community Support</h3>
+          <p>Building relationships and assisting where needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact">
+      <h2>Our Impact</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3>3,000+</h3>
+          <p>Lives Impacted</p>
+        </div>
+        <div class="stat">
+          <h3>500+</h3>
+          <p>Meals Served</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Events Organized</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORSHIP LETTERS -->
+<section id="sponsorship-letters" class="sponsorship-letters-section">
+  <h2>Sponsorship Letters</h2>
+  <div class="sponsorship-gallery gallery">
+    <div class="sponsor">
+      <img src="images/sponsorship-letters/gino.jpg" alt="Gino Sponsorship Letter">
+      <p>GINO</p>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We spread love, joy, and hope to our community through acts of kindness, outreach, and support.</p>
-    <div class="about-cards">
-      <div class="about-card">
-        <img src="images/mission.jpg" alt="Mission">
-        <h3>Our Mission</h3>
-        <p>Provide support and joy to underserved communities.</p>
-      </div>
-      <div class="about-card">
-        <img src="images/vision.jpg" alt="Vision">
-        <h3>Our Vision</h3>
-        <p>Foster a community where everyone feels loved and cared for.</p>
-      </div>
-      <div class="about-card">
-        <img src="images/values.jpg" alt="Values">
-        <h3>Our Values</h3>
-        <p>Compassion, generosity, and inclusivity in all we do.</p>
-      </div>
+    <div class="sponsor">
+      <img src="images/sponsorship-letters/selekt.jpg" alt="Selekt Sponsorship Letter">
+      <p>SELEKT</p>
     </div>
-  </section>
-
-  <!-- PROGRAMS -->
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Feeding Drive</h3>
-        <p>Providing meals for families in need.</p>
-      </div>
-      <div class="card">
-        <h3>Gift Distribution</h3>
-        <p>Sharing Christmas gifts with children.</p>
-      </div>
-      <div class="card">
-        <h3>Community Support</h3>
-        <p>Building relationships and assisting where needed.</p>
-      </div>
+    <div class="sponsor">
+      <img src="images/sponsorship-letters/laziz-oil.jpg" alt="Laziz Oil Sponsorship Letter">
+      <p>LAZIZ OIL</p>
     </div>
-  </section>
-
-  <!-- IMPACT -->
-  <section id="impact">
-    <h2>Our Impact</h2>
-    <div class="stats">
-      <div class="stat">
-        <h3>10,000+</h3>
-        <p>Lives Impacted</p>
-      </div>
-      <div class="stat">
-        <h3>500+</h3>
-        <p>Meals Served</p>
-      </div>
-      <div class="stat">
-        <h3>50+</h3>
-        <p>Events Organized</p>
-      </div>
+    <div class="sponsor">
+      <img src="images/sponsorship-letters/noella-foundation.jpg" alt="Noella Foundation Sponsorship Letter">
+      <p>NOELLA FOUNDATION</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>"Christmas on the Street changed my life."</p>
-        <h4>- Volunteer Jane</h4>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/event1.png" alt="Event 1">
+        <img src="images/event2.png" alt="Event 2">
+        <img src="images/event3.png" alt="Event 3">
+        <img src="images/event4.png" alt="Event 4">
+        <img src="images/event5.png" alt="Event 5">
       </div>
-      <div class="testimonial">
-        <p>"Amazing community support and care."</p>
-        <h4>- Beneficiary John</h4>
+    </section>
+
+<section class="sponsors" id="sponsors">
+  <h2 class="section-title">Our Sponsors</h2>
+  <p class="section-subtitle">Honoring those who make the magic possible</p>
+
+  <div class="sponsor-grid">
+    <div class="sponsor-card">SANTA TOMIYIN ONAMIYE</div>
+    <div class="sponsor-card">SANTA LOVETH</div>
+    <div class="sponsor-card">SANTA PRECIOUS</div>
+    <div class="sponsor-card">SANTA CHICHI</div>
+    <div class="sponsor-card">SANTA BUSAYO</div>
+    <div class="sponsor-card">SANTA AUNTY TAYO</div>
+    <div class="sponsor-card">SANTA ANONYMOUS GB</div>
+    <div class="sponsor-card">SANTA AYOKU KOLADE</div>
+    <div class="sponsor-card">SANTA DAUD ABDULHAKEEM</div>
+    <div class="sponsor-card">SANTA JOHN</div>
+    <div class="sponsor-card">SANTA GRACE</div>
+    <div class="sponsor-card">SANTA AFOLABI DANIELS</div>
+    <div class="sponsor-card">SANTA TELEMI ONABANJO</div>
+    <div class="sponsor-card">SANTA IFEANYI DUAKA</div>
+    <div class="sponsor-card">SANTA PETER OGUNMOLA</div>
+  </div>
+</section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown">
+      <h2>Countdown to the Lagos and Ibadan movement</h2>
+      <div class="countdown-timer" aria-live="polite">
+        <div class="time-box"><span id="days">00</span><p>Days</p></div>
+        <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+        <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
+        <div class="time-box"><span id="seconds">00</span><p>Seconds</p></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- GALLERY -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/event1.png" alt="Event 1">
-      <img src="images/event2.png" alt="Event 2">
-      <img src="images/event3.png" alt="Event 3">
-      <img src="images/event4.png" alt="Event 4">
-      <img src="images/event5.png" alt="Event 5">
-    </div>
-  </section>
+    <!-- DONATE -->
+    <section id="donate">
+      <h2>Donate</h2>
+      <p>Your contribution helps us reach more people and create a bigger impact.</p>
+      <div style="text-align:center; margin-top:20px;">
+        <div class="account-number">3000964873 | Kuda Bank</div>
+      </div>
+    </section>
 
-  <!-- COUNTDOWN -->
-  <section id="countdown">
-    <h2>Countdown to the Lagos and Ibadan movement </h2>
-    <div class="countdown-timer">
-      <div class="time-box"><span id="days">00</span><p>Days</p></div>
-      <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
-      <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
-      <div class="time-box"><span id="seconds">00</span><p>Seconds</p></div>
-    </div>
-  </section>
-
-  <!-- DONATE -->
-  <section id="donate">
-    <h2>Donate</h2>
-    <p>Your contribution helps us reach more people and create a bigger impact.</p>
-    <div style="text-align:center; margin-top:20px;">
-      <div class="account-number">3000964873 | Kuda Bank</div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact-card">
-    <h3>Christmas on the Street</h3>
-    <p>Email: <a href="mailto:Cotsthestreet@gmail.com">Cotsthestreet@gmail.com</a></p>
-    <p>Phone: +234 816 252 9363</p>
-    <p>Address: Lekki Paradise 2, Chevron Drive, Lekki, Lagos State</p>
-   </section>
-
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <h3>Christmas on the Street</h3>
+        <p>Email: <a href="mailto:Cotsthestreet@gmail.com">Cotsthestreet@gmail.com</a></p>
+        <p>Phone: +234 816 252 9363</p>
+        <p>Address: Lekki Paradise 2, Chevron Drive, Lekki, Lagos State</p>
+      </div>
+    </section>
+  </main>
 
   <!-- FLOATING DONATE BUTTON -->
-  <a href="#donate" class="float-donate">Donate</a>
+  <a href="#donate" class="float-donate" aria-label="Donate">Donate</a>
 
   <!-- LIGHTBOX -->
-  <div id="lightbox"><img src="" alt="Gallery Image"></div>
+  <div id="lightbox" aria-hidden="true"><img src="" alt="Gallery Image"></div>
 
   <!-- FOOTER -->
   <footer>
     <p>© 2022 Christmas on the Street</p>
     <div>
-      <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Twitter">Twitter</a> | <a href="#" aria-label="Instagram">Instagram</a>
     </div>
   </footer>
 
   <!-- SCRIPTS -->
   <script>
-    // LIGHTBOX
-    const galleryImages = document.querySelectorAll('.gallery img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('img');
-    galleryImages.forEach(img => {
-      img.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
+    // ===== LIGHTBOX =====
+    (function() {
+      const galleryImages = document.querySelectorAll('.gallery img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = lightbox.querySelector('img');
+      galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+          lightbox.style.display = 'flex';
+          lightbox.setAttribute('aria-hidden','false');
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || 'Gallery image';
+        });
       });
-    });
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) lightbox.style.display = 'none';
-    });
+      lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) {
+          lightbox.style.display = 'none';
+          lightbox.setAttribute('aria-hidden','true');
+        }
+      });
+    })();
 
-    // ANNIVERSARY CANVAS
-const canvas = document.getElementById('anniversary-canvas');
-const ctx = canvas.getContext('2d');
+    // ===== ANNIVERSARY CANVAS (typing sparkles + soft snow) =====
+    (function(){
+      const canvas = document.getElementById('anniversary-canvas');
+      const ctx = canvas.getContext('2d');
 
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerWidth < 600 ? 80 : 120;
-  ctx.font = `${canvas.width < 600 ? 30 : 60}px 'Dancing Script', cursive`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        // keep the canvas short and wide for a header-like strip
+        canvas.height = window.innerWidth < 600 ? 80 : 200;
+        ctx.font = `${canvas.width < 600 ? 28 : 54}px 'Dancing Script', cursive`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
 
-const text = "T h r e e  Y e a r s  A n n i v e r s a r y";
-let index = 0;
-let particles = [];
+      const text = "T h r e e  Y e a r s  A n n i v e r s a r y";
+      let index = 0;
+      let particles = [];    // gold sparkles from letters
+      let snowflakes = [];   // soft white snow
 
-// Particle class
-class Particle {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-    this.radius = Math.random() * 2 + 1;
-    this.dx = (Math.random() - 0.5) * 1.5;
-    this.dy = (Math.random() - 0.5) * 1.5;
-    this.alpha = 1;
-    this.color = `rgba(255, ${Math.floor(200 + Math.random()*55)}, 0, 1)`; // golden sparkle
-  }
-  update() {
-    this.x += this.dx;
-    this.y += this.dy;
-    this.alpha -= 0.02;
-  }
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
-    ctx.fillStyle = this.color.replace('1)', this.alpha + ')');
-    ctx.fill();
-  }
-}
+      // Particle (gold sparkle)
+      class Particle {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+          this.radius = Math.random() * 2 + 1;
+          this.dx = (Math.random() - 0.5) * 1.6;
+          this.dy = (Math.random() - 0.5) * 1.6;
+          this.alpha = 1;
+          this.color = `rgba(255, ${Math.floor(200 + Math.random()*55)}, 0, 1)`;
+        }
+        update() {
+          this.x += this.dx;
+          this.y += this.dy;
+          this.alpha -= 0.02;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+          // safely replace alpha
+          const color = this.color.replace(/,1\)$/, `,${Math.max(0, this.alpha).toFixed(2)})`);
+          ctx.fillStyle = color;
+          ctx.fill();
+        }
+      }
 
-// Typing interval
-const typingSpeed = 150; // ms per letter for smooth typing
-let lastTypedTime = 0;
+      // Snowflake object
+      function createSnowflake() {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * -canvas.height;
+        const r = Math.random() * 3 + 0.6;
+        const speed = Math.random() * 0.6 + 0.2;
+        const sway = Math.random() * 1.5;
+        snowflakes.push({x,y,r,speed,sway,alpha: Math.random()*0.8 + 0.2});
+      }
 
-function animate(timestamp) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const typingSpeed = 140; // ms per character
+      let lastTypedTime = 0;
 
-  // Draw typed text
-  ctx.fillStyle = "gold";
-  ctx.shadowColor = "rgba(255,215,0,0.6)";
-  ctx.shadowBlur = 15;
-  ctx.fillText(text.slice(0, index), canvas.width / 2, canvas.height / 2);
+      function animate(timestamp) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Spawn particles along typed letters
-  if (index > 0) {
-    const textWidth = ctx.measureText(text.slice(0,index)).width;
-    const x = canvas.width/2 - textWidth/2 + Math.random() * textWidth;
-    const y = canvas.height/2 + (Math.random() - 0.5) * 40;
-    particles.push(new Particle(x, y));
-  }
+        // gentle backdrop blur/shadow when drawing text
+        ctx.fillStyle = "gold";
+        ctx.shadowColor = "rgba(255,215,0,0.55)";
+        ctx.shadowBlur = 14;
+        ctx.fillText(text.slice(0, index), canvas.width / 2, canvas.height / 2);
 
-  // Draw and update particles
-  particles.forEach(p => {
-    p.update();
-    p.draw();
-  });
-  particles = particles.filter(p => p.alpha > 0);
+        // spawn gold particles along typed letters
+        if (index > 0) {
+          const textWidth = ctx.measureText(text.slice(0,index)).width;
+          const x = canvas.width/2 - textWidth/2 + Math.random() * textWidth;
+          const y = canvas.height/2 + (Math.random() - 0.5) * 30;
+          particles.push(new Particle(x, y));
+        }
 
-  // Smooth typing
-  if (index < text.length && (!lastTypedTime || timestamp - lastTypedTime > typingSpeed)) {
-    index++;
-    lastTypedTime = timestamp;
-  } else if (index === text.length) {
-    // Text fully typed: restart after 14s
-    if (!canvas.restartTimeout) {
-      canvas.restartTimeout = setTimeout(() => {
-        index = 0;
-        canvas.restartTimeout = null;
-      }, 14000);
-    }
-  }
+        // update & draw particles
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i];
+          p.update();
+          p.draw();
+          if (p.alpha <= 0) particles.splice(i,1);
+        }
 
-  requestAnimationFrame(animate);
-}
+        // snow spawn cap and update
+        if (snowflakes.length < 120) {
+          if (Math.random() < 0.7) createSnowflake();
+        }
+        for (let i = snowflakes.length - 1; i >= 0; i--) {
+          const s = snowflakes[i];
+          s.y += s.speed;
+          s.x += Math.sin(s.y * 0.01) * s.sway;
+          ctx.beginPath();
+          ctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
+          ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+          ctx.fill();
+          if (s.y - s.r > canvas.height) snowflakes.splice(i,1);
+        }
 
-requestAnimationFrame(animate);
+        // typing progress control
+        if (index < text.length && (!lastTypedTime || timestamp - lastTypedTime > typingSpeed)) {
+          index++;
+          lastTypedTime = timestamp;
+        } else if (index === text.length) {
+          // restart after 14s
+          if (!canvas.restartTimeout) {
+            canvas.restartTimeout = setTimeout(() => {
+              index = 0;
+              canvas.restartTimeout = null;
+            }, 14000);
+          }
+        }
 
-    // Mobile menu toggle
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('header nav');
-    toggle.addEventListener('click', () => {
-      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    });
+        requestAnimationFrame(animate);
+      }
 
-    // COUNTDOWN
-    function countdownTimer() {
+      requestAnimationFrame(animate);
+    })();
+
+    // ===== Mobile menu toggle (class-based) =====
+    (function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('header nav');
+
+      function toggleNav() {
+        nav.classList.toggle('open');
+      }
+
+      toggle.addEventListener('click', toggleNav);
+      // allow keyboard activation
+      toggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleNav();
+        }
+      });
+
+      // close nav when clicking outside on mobile
+      document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !toggle.contains(e.target) && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+        }
+      });
+    })();
+
+    // ===== COUNTDOWN =====
+    (function() {
       const daysEl = document.getElementById('days');
       const hoursEl = document.getElementById('hours');
       const minutesEl = document.getElementById('minutes');
@@ -297,7 +393,8 @@ requestAnimationFrame(animate);
       function updateCountdown() {
         const now = new Date();
         let year = now.getFullYear();
-        let targetDate = new Date(`DECEMBER 22 , ${year} 00:00:00`);
+        // set to December 22 at 00:00 of current year (as original)
+        let targetDate = new Date(`December 22, ${year} 00:00:00`);
         if (now > targetDate) targetDate.setFullYear(year + 1);
 
         const total = targetDate - now;
@@ -306,50 +403,55 @@ requestAnimationFrame(animate);
         const minutes = Math.floor((total / (1000*60)) % 60);
         const seconds = Math.floor((total / 1000) % 60);
 
-        daysEl.textContent = days.toString().padStart(2,'0');
-        hoursEl.textContent = hours.toString().padStart(2,'0');
-        minutesEl.textContent = minutes.toString().padStart(2,'0');
-        secondsEl.textContent = seconds.toString().padStart(2,'0');
+        daysEl.textContent = String(Math.max(0, days)).padStart(2,'0');
+        hoursEl.textContent = String(Math.max(0, hours)).padStart(2,'0');
+        minutesEl.textContent = String(Math.max(0, minutes)).padStart(2,'0');
+        secondsEl.textContent = String(Math.max(0, seconds)).padStart(2,'0');
       }
+
       updateCountdown();
-      setInterval(updateCountdown,1000);
-    }
-    countdownTimer();
+      setInterval(updateCountdown, 1000);
+    })();
 
-    // Sparkles behind countdown
-    const countdownSection = document.getElementById('countdown');
-    const sparkleCount = 25;
-    const sparkles = [];
+    // ===== Sparkles behind countdown (DOM spans) =====
+    (function() {
+      const countdownSection = document.getElementById('countdown');
+      if (!countdownSection) return;
+      const sparkleCount = 25;
+      const sparkles = [];
 
-    for(let i=0;i<sparkleCount;i++){
-      const span = document.createElement('span');
-      span.style.position='absolute';
-      span.style.width=span.style.height=`${Math.random()*6+4}px`;
-      span.style.background='white';
-      span.style.borderRadius='50%';
-      span.style.left=`${Math.random()*100}%`;
-      span.style.top=`${Math.random()*100}%`;
-      span.style.opacity=Math.random();
-      span.style.pointerEvents='none';
-      span.style.filter='blur(2px)';
-      countdownSection.appendChild(span);
-      sparkles.push({el:span, dx:(Math.random()-0.5)*0.5, dy:(Math.random()-0.5)*0.5});
-    }
+      for (let i = 0; i < sparkleCount; i++) {
+        const span = document.createElement('span');
+        span.className = 'count-sparkle';
+        span.style.position = 'absolute';
+        span.style.width = span.style.height = `${Math.random() * 6 + 4}px`;
+        span.style.background = 'white';
+        span.style.borderRadius = '50%';
+        span.style.left = `${Math.random() * 100}%`;
+        span.style.top = `${Math.random() * 100}%`;
+        span.style.opacity = Math.random();
+        span.style.pointerEvents = 'none';
+        span.style.filter = 'blur(2px)';
+        countdownSection.appendChild(span);
+        sparkles.push({el: span, dx: (Math.random() - 0.5) * 0.5, dy: (Math.random() - 0.5) * 0.5});
+      }
 
-    function animateSparkles(){
-      sparkles.forEach(s=>{
-        let left = parseFloat(s.el.style.left);
-        let top = parseFloat(s.el.style.top);
-        left+=s.dx; top+=s.dy;
-        if(left>100) left=0; if(left<0) left=100;
-        if(top>100) top=0; if(top<0) top=100;
-        s.el.style.left = left+'%';
-        s.el.style.top = top+'%';
-      });
-      requestAnimationFrame(animateSparkles);
-    }
-    animateSparkles();
-
+      function animateSparkles(){
+        sparkles.forEach(s => {
+          let left = parseFloat(s.el.style.left);
+          let top = parseFloat(s.el.style.top);
+          left += s.dx; top += s.dy;
+          if (left > 100) left = 0;
+          if (left < 0) left = 100;
+          if (top > 100) top = 0;
+          if (top < 0) top = 100;
+          s.el.style.left = left + '%';
+          s.el.style.top = top + '%';
+        });
+        requestAnimationFrame(animateSparkles);
+      }
+      animateSparkles();
+    })();
   </script>
 
 </body>
